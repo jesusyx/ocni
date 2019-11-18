@@ -453,6 +453,7 @@ section.news-events .events .event-box img {
     height: 100%;
     width: 35%;
     padding-right: 1rem;
+    object-fit: cover;
 }
 
 section.news-events .events .event-box .event-date{
@@ -481,59 +482,12 @@ section.news-events .events .event-box .event-description p {
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
-
-
-
-.parallax_image {
-    position: relative;
-    height: 60vh;
-    
+/*--------------------------------------------------*/
+section.gallery-programs .box h2 {
+    display: inline-block;
 }
 
- .parallax_image img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-   /*  filter: brightness(0.6); */
-    position: relative;
-    z-index: -1;
-}
-.parallax_image .content-over {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.parallax_image .content-over h2.title {
-    font-size: 2rem;
-    font-family: 'Coves';
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-.parallax_image .content-over h2.title::after {
-    width: 100%;
-}
-.parallax_image .content-over p.description {
-    font-size: 1.3rem;
-    font-family: 'Coves';
-    line-height: 1.75;
-    color: #fff;
-    text-align: center;
-}
-.parallax_image .content-over a {
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 0.8rem;
-    padding: 0.8rem 1.3rem;
-    text-decoration: none;
-}
+
 
 section.services article .image-box {
     height: 180px;
@@ -571,47 +525,6 @@ section.services article .image-box img {
     width: 100%;
     object-fit: cover;
     object-position: center;
-}
-
-section .trainings {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-section .trainings h2 {
-    font-family: 'Roboto Slab';
-    font-size: 1.8rem;
-}
-section .trainings p {
-    font-family: 'Poppins';
-    font-size: 0.9rem;
-}
-section .trainings .training .training-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-section .trainings .training .training-box img {
-    height: 100px;
-    margin-right: 1rem;
-}
-section .trainings .training .training-box .training-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-section .trainings .training .training-box .training-description h2 {
-    font-size: 1.2rem;
-    font-family: 'Roboto Slab';
-}
-section .trainings .training .training-box .training-description p {
-    font-family: 'Poppins';
-    font-size: 0.85rem;
-    line-height: 1.75;
-    margin-bottom: 0;
 }
 
 
@@ -805,6 +718,7 @@ footer p:nth-child(2) {
     .main-slider .aside {
         padding-right: 1rem !important;
         padding-left: 1rem !important;
+        height: 235px;
     }
     .main-slider .aside .aside-left-box.left {
         padding-right: 1rem;
@@ -813,9 +727,15 @@ footer p:nth-child(2) {
         padding-left: 1rem;
     }
 
+
+    .main-slider .aside .aside-left-box {
+        height: calc( 100% - 0.5rem );
+    }
+
 }
 
 @media screen and (max-width: 859px) {
+
     header .logo h1 {
         display: none;
     }
@@ -892,6 +812,9 @@ footer p:nth-child(2) {
         height: 50px;
     }
 
+    .main-slider .aside {
+        height: 470px;
+    }
     .main-slider .aside .aside-left-box {
         height: calc( 235px - 1rem );
     }
@@ -902,6 +825,10 @@ footer p:nth-child(2) {
     .main-slider .aside .aside-left-box.right {
         padding-left: 0rem;
         margin-bottom: calc(var(--vertical-block-space) * 2);
+    }
+
+    .main-slider .aside .aside-left-box {
+        height: calc( 50% - 0.5rem );
     }
     
 }
