@@ -74,7 +74,7 @@ p {
 }
 .subtitle {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: 'Roboto Slab';
 }
 .cortain {
@@ -136,7 +136,7 @@ p {
 
 
 .tiny-header {
-    background: #290025;
+    background: #072c3a;
 }
 .tiny-header p {
     color: #FEFEFE;
@@ -180,7 +180,7 @@ p {
 /*header-----------------------------------------------*/
 
 header {
-    background: #290025de;
+    background: #0E3E5A;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
     z-index: 999;
     position: static;
@@ -409,6 +409,11 @@ header nav ul.ed-menu li ul li a:focus::before {
 
 
 
+section.news-events {
+    background: #fff;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
 section.news-events .box h2 {
     display: inline-block;
 }
@@ -482,52 +487,142 @@ section.news-events .events .event-box .event-description p {
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
+
+
+
+
+
+
 /*--------------------------------------------------*/
+section.gallery-programs {
+    background: #04151F;
+    padding: 1.5rem 0;
+    color: #f2f2f2;
+}
 section.gallery-programs .box h2 {
     display: inline-block;
 }
-
-
-
-section.services article .image-box {
-    height: 180px;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 1rem;
+section.gallery-programs .programs > div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    
 }
-section.services article .article-description {
+
+section.gallery-programs .programs .single-program {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-section.services article .article-description h2 {
-    font-family: 'Azonix';
-    font-size: 1.15rem;
+section.gallery-programs .programs .single-program img {
+    margin-bottom: 1rem;
 }
-section.services article .article-description P {
-    font-family: 'Poppins';
-    font-size: 0.9rem;
-    color: #4c4c4c;
-    line-height: 1.75;
+section.gallery-programs .programs .single-program h2 {
+    font-size: 1rem;
     text-align: center;
+/*     color: #7a7a7a; */  
 }
-section.services article .image-box:hover img {
-    transform: scale(1.1);
-    transition: 1000ms linear;
-}
-section.services article .image-box:hover .cortain {
-    background: rgba(0,0,0,0.0);
-    transition: 600ms linear;
-}
-section.services article .image-box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+section.gallery-programs .programs .single-program p {
+    font-size: 0.9rem;
+    font-family: 'Oswald';
+    color:#f2f2f2;
 }
 
 
+/*----------------------------------------------*/
+
+section.documents-links {
+    background: #fff;
+    padding-top: 1rem;
+}
+section.documents-links .box h2 {
+    display: inline-block;
+}
+
+section.documents-links .links > div {
+    display: flex;
+    
+}
+section.documents-links .links ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+section.documents-links .links ul li {
+    padding-bottom: 1rem;
+    font-family: 'Roboto Slab';
+    font-size: 0.9rem;
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+section.documents-links .links ul li i {
+    margin-right: 0.5rem;   
+}
+
+
+section.documents-links .documents .single-document {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #022B3A;
+    padding-left: 1rem;
+}
+section.documents-links .documents .single-document h2 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: 'Oswald';
+}
+section.documents-links .documents .single-document p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    font-family: 'Josefin Sans';
+}
+
+
+
+
+/*----------------------------------------------*/
+
+section.becas-unknown > div > div  {
+    display: flex;
+    justify-content: space-between;
+}
+section.becas-unknown > div > div .becas-single  {
+    height: 90px;
+    display: flex;
+    background: #2C6FA9;
+    color: #f2f2f2;
+    align-items: center;
+    margin-right: 1rem;
+    border-top: 4px solid darkgrey;
+    
+}
+section.becas-unknown > div > div .becas-single img  {
+    height: 60%;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+section.becas-unknown > div > div .becas-single h3  {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Roboto Slab';
+
+}
+section.becas-unknown > div > div .becas-single > div {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-left: 1px solid #ccc;
+
+}
+section.becas-unknown > div > div .becas-single p  {
+    margin-bottom: 0;
+    color: #f2f2f2;
+    font-size: 0.8rem;
+    font-family: 'Josefin Sans';
+    line-height: 1.6;
+}
 
 /*--------------------------------------MEAN MENU------------------------------*/
     /*START MENU RESPONSIVE*/
