@@ -43,8 +43,8 @@
 }
 
 body {
-    font-family: 'Poppins', 'Open Sans' !important;
-    background: #FEFEFE;
+    font-family: 'Poppins', 'Open Sans';
+    background: #FAFAFA;
 }
 
 :root {
@@ -54,6 +54,7 @@ body {
     --fourth-color: #0D3D61;
     --fifth-color: #03BDEC;
     --sixth-color: #EE6352;
+    --seventh-color: #290025;
 
     --vertical-block-space: 1rem;
 }
@@ -124,7 +125,7 @@ p {
 .b-border::after {
     content:"";
     width:100%;
-    height:2px;
+    height:4px;
     z-index:9;
     margin-top: 0.6rem;
     background:linear-gradient(to right, aqua 50%, #ccc 50%);
@@ -135,7 +136,7 @@ p {
 
 
 .tiny-header {
-    background: var(--sixth-color);
+    background: #290025;
 }
 .tiny-header p {
     color: #FEFEFE;
@@ -179,7 +180,7 @@ p {
 /*header-----------------------------------------------*/
 
 header {
-    background: #ee6352e3;
+    background: #290025de;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
     z-index: 999;
     position: static;
@@ -411,6 +412,78 @@ header nav ul.ed-menu li ul li a:focus::before {
 section.news-events .box h2 {
     display: inline-block;
 }
+
+section.news-events .news img {
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+section.news-events .news .news-box {
+    padding: 1rem;
+    background: #fff;
+}
+section.news-events .news h2.news-title {
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+    font-family: 'Poppins';
+    text-align: center;
+    color: #4c4c4c;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    width: 100%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+section.news-events .news p.news-date {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    font-family: 'Josefin Sans';
+
+}
+
+
+section.news-events .events .event-box {
+    display:flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+section.news-events .events .event-box img {
+    height: 100%;
+    width: 35%;
+    padding-right: 1rem;
+}
+
+section.news-events .events .event-box .event-date{
+    padding-right: 1rem;
+}
+section.news-events .events .event-box .event-date p.date {
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+section.news-events .events .event-box .event-date p.date span {
+    font-size: 1.5rem;
+}
+section.news-events .events .event-box .event-description h2 {
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1.75;
+    font-family: 'Roboto Slab';
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+
+}
+section.news-events .events .event-box .event-description p {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+
+
 .parallax_image {
     position: relative;
     height: 60vh;
