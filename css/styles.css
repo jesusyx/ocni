@@ -789,20 +789,21 @@ section.becas-unknown > div > div .becas-single p  {
 footer {
     background-color: var(--secondary-color);
 }
-footer div {
+footer .footer-details {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    color:#e2e2e2;
 }
-footer p {
-    color:#ccc;
-    font-size: 0.9rem;
-    font-family: 'Josefin Sans';
-    text-align: center;
-    margin-bottom: 1rem;
+footer .footer-details h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: 'Azonix';
 }
-footer p:nth-child(2) {
-    margin: 0;
+footer .footer-details p {
+    color:#e4e4e4b8;
+    font-family: 'Coves';
+    font-weight: bold;
 }
 
 
